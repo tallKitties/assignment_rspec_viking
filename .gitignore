@@ -1,1 +1,8 @@
+/.bundle/
+/pkg/
+/spec/reports/
+/tmp/
+/coverage/
+
+.rspec_status
 .DS_Store
