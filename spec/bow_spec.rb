@@ -33,7 +33,7 @@ RSpec.describe Bow do
 
     it "should raise an error if no arrows are left" do
       bow = Bow.new(0)
-      expect{bow.use}.to raise_error(RuntimeError)
+      expect{bow.use}.to raise_error("Out of arrows")
     end
   end
 end
