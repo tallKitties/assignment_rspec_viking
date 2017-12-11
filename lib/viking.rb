@@ -34,6 +34,7 @@ class Viking
   end
 
   private
+
   def damage_dealt
     if @weapon
       damage_with_weapon
