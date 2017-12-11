@@ -133,6 +133,14 @@ RSpec.describe Viking do
           ben_empty.attack(john_dub)
         end
       end
+
+      context 'killing a viking' do
+        let(:john) { Viking.new('John', 2.5) }
+        it 'should raise an error' do
+          allow(ben).to receive(:damage_dealt).and_return(2.5)
+          expect { ben.attack(john) }.to raise_error(RuntimeError)
+        end
+      end
     end
   end
 end
